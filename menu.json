@@ -1,0 +1,26 @@
+{
+	"items": [
+		{
+			"type": "executable",
+			"title": "Open file manager",
+			"path": "/usr/bin/ranger"
+		},
+		{
+			"type": "submenu",
+			"title": "Networking",
+			"items": [
+				{
+					"type": "executable",
+					"path": "/usr/bin/wicd",
+					"title": "Open WICD"
+				}
+			]
+		},
+		{
+			"type": "executable",
+			"title": "Echo",
+			"path": "/bin/echo"
+		}
+	]
+
+}
