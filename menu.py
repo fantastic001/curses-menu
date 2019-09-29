@@ -9,7 +9,11 @@ Application.init()
 
 conf = None
 try:
-    f = open("%s/.config/menu.json" % os.environ["HOME"])
+    f = None
+    try:
+        f = open("%s/menu.json" % os.getcwd())
+    except:
+        f = open("%s/.config/menu.json" % os.environ["HOME"])
     conf = json.loads(f.read())
     f.close()
 except FileNotFoundError:
